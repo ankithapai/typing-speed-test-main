@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="src/main.css">
   <title>Frontend Mentor | Typing Speed Test</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,42 +16,81 @@
 </head>
 <body>
 
-  Personal best: <!-- PB --> WPM
+  <div class="gameContainer">
+    <div class="header">
+      <div class="headerLeft">
+        <img src="./assets/images/logo-large.svg" alt="Typing Speed Test Logo">
+      </div>
+      <div class="headerRight">
+        <img src="./assets/images/icon-personal-best.svg" alt="trophy icon">
+        <div class="highScoreContainer">
+          <span class="statTag">Personal best: </span>
+          <span class="statValue"> 0 WPM</span>
+        </div>
+      </div>
+    </div>
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Time: <!-- Time -->
+    <div class="gameBar">
+      <div class="stats">
+        <div class="wpm">
+          <span class="statTag">WPM:</span>
+          <span class="statValue">0</span>
+        </div>
+        <div class="accuracy">
+          <span class="statTag">Accuracy:</span>
+          <span class="statValue">100%</span>
+        </div>
+        <div class="time">
+          <span class="statTag">Time:</span>
+          <span class="statValue">0:60</span>
+        </div>
+      </div>
 
-  Difficulty:
-  Easy
-  Medium
-  Hard
+      <div class="difficulty">
+        <span class="optionTag">Difficulty:</span>
+        <div class="options">
+          <button class="btn option">Easy</button>
+          <button class="btn option">Medium</button>
+          <button class="btn option">Hard</button>
+        </div>
+      </div>
 
-  Mode:
-  Timed (60s)
+      <div class="mode">
+        <span class="optionTag">Mode:</span>
+        <div class="options">
+          <button class="btn option">Timed(60s)</button>
+          <button class="btn option">Passage</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="passageContainer">
+
+    </div>
+  </div>
+
+<!-- 
   Passage
-
-  <!-- Passage -->
 
   Start Typing Test
   Or click the text and start typing
 
-  <!-- Test Complete Start -->
+  Test Complete Start
 
   Test Complete!
   Solid run. Keep pushing to beat your high score.
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Characters: <!-- Correct/Incorrect -->
+  WPM: WPM
+  Accuracy: Accuracy
+  Characters: Correct/Incorrect
 
   Go Again
-  
+   -->
   <!-- Test Complete End -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Ankitha Pai</a>.
-  </div>
+  </div> -->
 </body>
 </html>
